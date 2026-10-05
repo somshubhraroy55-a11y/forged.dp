@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeamForge - Find the teammates your project is missing</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap bar"><b class="logo">TeamForge</b>
+<span class="priv">Matching runs in your browser (on-device)</span>
+<div id="who"></div></div></header>
+<main class="wrap">
+<section id="authBox" class="card" hidden>
+<h2 id="authTitle">Login</h2>
+<input id="name" placeholder="Full name" hidden>
+<input id="email" type="email" placeholder="Email (try aarav@demo.com)">
+<input id="pw" type="password" placeholder="Password (demo123)">
+<input id="role" placeholder="Role e.g. Web developer" hidden>
+<input id="skills" placeholder="Skills e.g. react, c++, figma" hidden>
+<button id="authBtn" class="p">Login</button>
+<a href="#" id="toggle">New here? Create account</a><p id="authErr" class="err"></p>
+</section>
+<div id="app" hidden>
+<section class="card"><h2>What does your team need?</h2>
+<textarea id="need" placeholder="e.g. Need a React dev and a C++ / IoT person for our hackathon"></textarea>
+<div class="row"><button id="find" class="p">Find teammates</button><button id="share">Find and post to feed</button></div>
+<div id="detected" class="mut"></div></section>
+<div class="cols"><section class="card"><h2>Best matches</h2><div id="matches" class="mut">Type your need above.</div></section>
+<section><div class="card"><h2>My requests</h2><div id="conns" class="mut">Nothing yet.</div></div>
+<div class="card"><h2>Community feed</h2><div id="feed"></div></div></section></div>
+</div></main>
+<footer class="wrap mut">Made for the iQOO Hackathon - Community App track. Stack: Flask, SQLite, vanilla JS.</footer>
+<script src="app.js"></script></body></html>
